@@ -1,4 +1,4 @@
-ame: Day3 Pipeline
+name: Day3 Pipeline
 
 on:
   push:
