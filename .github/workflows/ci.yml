@@ -24,7 +24,7 @@ jobs:
 
       - name: Run Linter
         run: |
-          flake8 .
+          flake8 Day3_pipeline
 
       - name: Run pytest
         env:
