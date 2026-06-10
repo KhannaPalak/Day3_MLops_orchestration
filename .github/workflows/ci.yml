@@ -19,7 +19,7 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          pip install -r day3_pipeline/requirements.txt
+          pip install -r Day3_pipeline/requirements.txt
           pip install pytest flake8
 
       - name: Run Linter
@@ -29,8 +29,8 @@ jobs:
       - name: Run pytest
         env:
           PYTHONPATH: ${{ github.workspace }}
-        run: pytest day3_pipeline/test/test_pipeline.py
+        run: pytest Day3_pipeline/test/test_pipeline.py
 
 
       - name: Execute Pipeline
-        run: python day3_pipeline/main.py
+        run: python Day3_pipeline/main.py
