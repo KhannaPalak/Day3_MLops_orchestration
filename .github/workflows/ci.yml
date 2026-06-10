@@ -33,6 +33,8 @@ jobs:
 
 
       - name: Execute Pipeline
-        run: python Day3_pipeline/main.py
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: python -m Day3_pipeline.main
 
-        
+
